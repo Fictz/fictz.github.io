@@ -1,0 +1,27 @@
+body {
+  background: linear-gradient(to top left, #0f0f0f, #1a1a1a);
+  color: white;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fade 1.5s ease forwards;
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
